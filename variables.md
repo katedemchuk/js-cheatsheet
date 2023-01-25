@@ -8,7 +8,7 @@ Declaration with initialization:
 |---------|---------------|---------------------|-------|
 | `var`   | one           | =                   | 1     |
 | `let`   | two           | =                   | 2     |
-| `const` | three         | =                   | 3*    |
+| `const` | THREE         | =                   | 3*    |
 
 *const **must have initializer**
 
@@ -29,8 +29,8 @@ var a // ok
 let b // ok
 
 
-const c // -> SyntaxError, const always must have initializer
-const c = 'C' // ok
+const C // -> SyntaxError, const always must have initializer
+const C = 'C' // ok
 ```
 
 ### Scope
@@ -91,8 +91,8 @@ text = 'ttt' // ok
 let digits = 4567
 digits = 1000 // ok
 
-const float = 5.6
-float = 6.7 // -> TypeError, const variables can not be reassigned
+const FLOAT = 5.6
+FLOAT = 6.7 // -> TypeError, const variables can not be reassigned
 ```
 
 ### Creates window property
