@@ -5,7 +5,7 @@
 Declaration with initialization:
 
 | Keyword | Symbolic name | Assignment operator | Value |
-|---------|---------------|---------------------|-------|
+|---------|---------------|        :---:        |-------|
 | `var`   | one           | =                   | 1     |
 | `let`   | two           | =                   | 2     |
 | `const` | THREE         | =                   | 3*    |
@@ -15,7 +15,7 @@ Declaration with initialization:
 ## Main differences
 
 |                         | `var`    | `let`            | `const`          |
-|-------------------------|----------|------------------|------------------|
+|-------------------------|   :---:  |       :---:      |       :---:      |
 | Must have initializer   | no       | no               | yes              |
 | Scope defined by        | function | block            | block            |
 | Hoisting                | yes      | `ReferenceError` | `ReferenceError` |
