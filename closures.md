@@ -19,13 +19,19 @@ function makeLogger(message) {
 
 const logger = makeLogger('Not life, but good life, is to be chiefly valued')
 
-console.log(logger) // -> f logger0 () { console.log(prefix + message) }
+console.log(logger)
+// -> f logger0 () { console.log(prefix + message) }
 // ^
-// Our newly created function tries to access constant 'prefix' and parameter 'message' values which don't belong to it!
+// Our newly created function tries to access constant
+// 'prefix' and parameter 'message' values which don't
+// belong to it!
 
-logger() // -> Logger says: Not life, but good life, is to be chiefly valued
+logger()
+// -> Logger says: Not life, but good life, is to be
+// chiefly valued
 
-// Success! A closure works, logger function can access surrounding lexical environment!
+// Success! A closure works, logger function can access
+// surrounding lexical environment!
 ```
 
 Example above shows how `logger` function can access lexical entities outside itself. So there is a mechanism which allows for a function access outer state and use it inside. More specifically access constant `prefix` and parameter `message` values declared outside of the function.
@@ -45,7 +51,9 @@ function logger(message) {
   log()
 }
 
-logger('Not life, but good life, is to be chiefly valued') // -> Logger says: Not life, but good life, is to be chiefly valued
+logger('Not life, but good life, is to be chiefly valued')
+// -> Logger says: Not life, but good life, is to be
+// chiefly valued
 ```
 
 This example shows how regular lexical scoping works — function scope is accessible via inner functions during parent function execution.
@@ -69,7 +77,8 @@ function makeCounter(count = 0) { // default parameter value
     count -= 1 // subtraction assignment operator
   }
 
-  return { value, reset, increment, decrement } // shorthand object property names
+  return { value, reset, increment, decrement }
+  // shorthand object property names
 }
 
 const counter0 = makeCounter(0)
