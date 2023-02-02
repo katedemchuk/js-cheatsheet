@@ -36,7 +36,7 @@ logger()
 
 Example above shows how `logger` function can access lexical entities outside itself. So there is a mechanism which allows for a function access outer state and use it inside. More specifically access constant `prefix` and parameter `message` values declared outside of the function.
 
-# No closure, just scope alternative
+## No closure, just scope alternative
 
 On the contrary, the same functionality can be rewritten without using a factory function and closure:
 
