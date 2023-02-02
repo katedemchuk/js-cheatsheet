@@ -1,4 +1,7 @@
 # Closure
+Closure = function + lexical environment:
+
+Closures are created when there is a function created by parent function or module which has access to enclosed scope — surrounding lexical environment at this function creation time.
 
 ## Simple example
 Log a message referencing a variable from enclosed scope (surrounding lexical environment) of a function which creates a closure:
@@ -42,9 +45,7 @@ function logger(message) {
   log()
 }
 
-logger('Not life, but good life, is to be chiefly valued')
-
-logger() // -> Logger says: Not life, but good life, is to be chiefly valued
+logger('Not life, but good life, is to be chiefly valued') // -> Logger says: Not life, but good life, is to be chiefly valued
 ```
 
 This example shows how regular lexical scoping works — function scope is accessible via inner functions during parent function execution.
